@@ -2,7 +2,20 @@
 
 Draw a random passage from your Markdown notes, or open a random note, using atmospheric randomness from [RANDOM.ORG](https://www.random.org/).
 
-Choose a folder, filter by tags, and follow a passage back to its source. The plugin selects a note uniformly, then a qualifying paragraph uniformly within that note. It does not weight every paragraph across the whole vault equally.
+Choose a folder, filter by tags, and follow a passage back to its source.
+
+## How passages are chosen
+
+The plugin first picks a note at random from the notes matching your filters. Every matching note has the same chance of being picked. It then picks a paragraph at random from the eligible paragraphs in that note, giving each of those paragraphs the same chance.
+
+For example, suppose your filters match just two notes:
+
+- **Note A has 2 eligible paragraphs.** The note has a 50% chance of being picked, so each paragraph has a **25% chance** of appearing in a draw.
+- **Note B has 20 eligible paragraphs.** This note also has a 50% chance of being picked, so each paragraph has a **2.5% chance** of appearing in a draw.
+
+This gives each note an equal chance, regardless of its length. As a result, an individual paragraph in a note with fewer eligible paragraphs is more likely to appear than one in a note with many eligible paragraphs. The plugin does not combine all paragraphs across your vault into one pool with equal odds.
+
+Only paragraphs that pass the passage filters are eligible. If the chosen note has none, the plugin opens the note with an explanation instead of drawing a passage.
 
 ## Setup
 
