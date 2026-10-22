@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Add a six-step RANDOM.ORG account and API-key setup guide directly in settings, including key state, license and quota checks, and troubleshooting.
+
 ## 1.2.0
 
 First public release.

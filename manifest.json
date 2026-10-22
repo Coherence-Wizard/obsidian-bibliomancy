@@ -1,7 +1,7 @@
 {
   "id": "bibliomancy-atmospheric-noise",
   "name": "Bibliomancy (Atmospheric Noise)",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "minAppVersion": "1.0.0",
   "description": "Discover random notes and passages using local randomness or optional atmospheric randomness from RANDOM.ORG.",
   "author": "Coherence-Wizard",

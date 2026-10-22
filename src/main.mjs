@@ -521,6 +521,18 @@ class BibliomancySettingTab extends PluginSettingTab {
         containerEl.createEl('a', { text: 'Get your own RANDOM.ORG API key', href: 'https://api.random.org/api-keys', attr: { target: '_blank', rel: 'noopener noreferrer' } });
 
         new Setting(containerEl)
+            .setName('Set up atmospheric randomness')
+            .setDesc('Follow these steps once to connect your own account.');
+        const steps = containerEl.createEl('ol');
+        steps.createEl('li', { text: 'Open the API key link above, then follow the API dashboard link on that page.' });
+        steps.createEl('li', { text: 'Sign in to RANDOM.ORG, or create an account and complete any verification requested by the service.' });
+        steps.createEl('li', { text: 'In the dashboard, create a new API key for this app. Choose the license that fits your use and review its current limits and any charges before confirming.' });
+        steps.createEl('li', { text: 'Copy the API key itself (the UUID), not its hashed value. Make sure its state is running.' });
+        steps.createEl('li', { text: 'Return here and paste the key into the field below. It saves automatically.' });
+        steps.createEl('li', { text: 'Keep atmospheric randomness enabled and local fallback disabled. Use the dice button or the draw-passage command to try it.' });
+        containerEl.createEl('p', { text: 'If a draw fails, check that the key is correct and running, your internet connection works, and your account has quota remaining. Manage or stop the key in the API dashboard.' });
+
+        new Setting(containerEl)
             .setName('RANDOM.ORG API key')
             .setDesc('Required only when RANDOM.ORG is enabled. No shared developer key is included.')
             .addText(text => {
