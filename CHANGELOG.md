@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+- Rename the displayed plugin to Bibliomancy. The plugin ID and existing settings remain unchanged.
+
 ## 1.2.1
 
 - Add a six-step RANDOM.ORG account and API-key setup guide directly in settings, including key state, license and quota checks, and troubleshooting.

@@ -1,11 +1,11 @@
-# Bibliomancy (Atmospheric Noise)
+# Bibliomancy
 
 Discover a random passage from your notes, or open a random note, using atmospheric randomness from [RANDOM.ORG](https://www.random.org/). Choose which folders or tags to include, then follow a passage back to its source.
 
 ## Get started
 
 1. Install and enable the plugin in Obsidian.
-2. Open **Settings → Bibliomancy (Atmospheric Noise)**.
+2. Open **Settings → Bibliomancy**.
 3. Follow the setup steps there to create a RANDOM.ORG account, get your own API key, and paste it into the settings.
 4. Leave **Use RANDOM.ORG** enabled to use atmospheric randomness.
 5. Click the dice button in Obsidian’s sidebar to draw a passage.
